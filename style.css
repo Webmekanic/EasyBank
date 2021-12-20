@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
+  /* width: 100vw; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* overflow: hidden; */
+}
+/* html{
+  width: 100%;
+  height: 100%;
+} */
+
+.container {
+  /* border: 3px solid yellow; */
+  height: 100%;
+  width: 100%;
+ 
+}
+.logo{
+  margin-top: 0.5rem;
+}
+nav {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 83%;
+  margin: auto;
+  height: 80px;
+  padding: 2rem;
+  align-items: center;
+  z-index: 99;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  font-size: clamp(0.9rem, 2vw, 1.125rem); 
+  
+}
+.navLink{
+  display: none;
+}
+.requestInvite{
+  display: none;
+}
+.hamburger{
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+#home{
+  /* border: 2px solid blue; */
+  width: 100%;
+  background-color:hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  /* height: 1000px; */
+
+}
+.homeBackground{
+  /* border: 2px solid green; */
+  min-height: 22.7rem;
+  background-image: url(./images/bg-intro-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+
+.homeBackground::after{
+  /* border: 1px solid purple; */
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/image-mockups.png);
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+
+.homeText{
+  width: 90%;
+  margin: auto;
+  /* border: 2px solid blue;  */
+  /* text-align: justify; */
+  margin-top: 1.5rem;
+  /* justify-content: j; */
+}
+h1{
+  /* border: 3px solid brown; */
+  font-size: 50px;
+  font-weight: 400;
+  color:   hsl(233, 26%, 24%);
+    text-align: center;
+    /* font-size: px; */
+
+
+}
+.homeParagraph{
+  /* border: 2px solid green; */
+  color: hsl(233, 8%, 62%);
+  font-size: 18px;
+  /* font-weight: bold; */
+  line-height: 1.5rem;
+  /* margin-top: 1.2rem; */
+  /* padding-right: 2rem; */
+  /* text-align: center; */
+  justify-content: center;
+  /* align-items: center; */
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+  padding: 0.3rem;
+  margin-top: 1.8rem;
+}
+
+#homeButton{
+  border: none;
+  padding: 1rem 2.39rem;
+  border-radius: 25px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  background-color: hsl(136, 65%, 51%);
+   background-image: linear-gradient(to right, hsl(136, 65%, 51%) ,  hsl(192, 70%, 51%));
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  /* opacity: 1; */
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  /* position: relative; */
+}
+#homeButton:hover{
+  opacity: 0.6;
+}
+#about{
+  background-color: hsl(220, 16%, 96%);
+  padding-top: 4rem;
+  /* border: 2px solid red; */
+  /* padding: 1.2rem; */
+}
+main{
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: auto; 
+}
+.aboutHeader{
+  /* border: 3px solid green; */
+  font-size: 38px;
+  margin-bottom: 1.7rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.aboutParagraph{
+  /* border: 2px solid blue; */
+  color: hsl(233, 8%, 62%);
+  font-size: 18px;
+  line-height: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8rem;
+  /* margin-bottom: 2rem; */
+  padding: 0rem 0.3rem;
+  /* margin-top: 1.8rem; */
+}
+.aboutArticle{
+  /* border: 3px solid orange; */
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  gap: 2rem;
+}
+.aboutCard{
+  /* border: 3px solid blue; */
+}
+.aboutImg, .aboutImg2, .aboutImg3, .aboutImg4{
+  /* border: 2px solid blue; */
+  width: 95px;
+  height: 95px;
+  position: relative;
+  margin: 40px auto;
+}
+.aboutImg::before{
+  content: "";
+  background-image: url(./images/icon-online.svg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+.aboutCardHeader{
+  /* border: 3px solid purple; */
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+}
+.aboutCardPara{
+  /* border: 2px solid pink; */
+  color: hsl(233, 8%, 62%);
+  font-size: 18px;
+  /* line-height: 1.5rem; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8rem;
+  /* margin-bottom: 2rem; */
+  /* padding: 0rem 0.3rem; */
+  margin-top: 1.95rem;
+}
+
+.aboutImg2::before{
+  content: "";
+  background-image: url(./images/icon-budgeting.svg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+
+.aboutImg3::before{
+  content: "";
+  background-image: url(./images/icon-onboarding.svg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+
+.aboutImg4::before{
+  content: "";
+  background-image: url(./images/icon-api.svg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 49.375rem) {
+  nav{
+    border: 2px solid red;
+  }
+  .navLink {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+.navLinkItem {
+  /* border: 2px solid green; */
+  justify-content: space-between;
+  width: 100%;
+  /* margin-left: 3rem; */
+  /* font-size: 18px; */
+  list-style: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  padding: 1.7rem 0;
+  justify-content: center;
+  /* display: block; */
+ 
+}
+.navLinkItem:hover{
+  border-bottom: 3px solid hsl(136, 65%, 51%);
+ 
+
+}
+
+.navLinkItem > a{
+    /* border: 2px solid orchid; */
+    text-decoration: none;
+    color:   hsl(233, 8%, 62%);
+    font-weight: 400;
+    cursor: pointer;
+    padding: 1.7rem 0;
+    justify-content: center;
+}
+.requestInvite{
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    /* font-size: 16px; */
+    text-transform: capitalize;
+    color: white;
+    background-color: hsl(136, 65%, 51%);
+     background-image: linear-gradient(to right, hsl(136, 65%, 51%) ,  hsl(192, 70%, 51%));
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    /* position: relative; */
+}
+.requestInvite:hover{
+  opacity: 0.6;
+}
+.hamburger{
+  display: none;
+}
+
+
+}
+
+
+
+
