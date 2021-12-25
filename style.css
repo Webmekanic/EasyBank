@@ -385,30 +385,61 @@ main{
   background-color: hsl(233, 26%, 24%);
   padding-bottom: 4rem;
   color: white;
+  /* align-items: center; */
   
   /* margin-top: 6rem; */
 }
 .contactPage{
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  align-items: center;
+  text-align: center
+  ;
 
 }
 #contactLogo{
-  border: 3px solid black;
+  /* border: 3px solid black; */
+  padding-top: 2rem;
+ 
+
 }
 .contactSocialMedia{
-border: 3px solid green;
+/* border: 3px solid green; */
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+padding-top: 2rem;
 }
+.contactLink{
+  list-style-type: none;
+
+}
+.contactLinkItem{
+  text-decoration: none;
+}
+
+
+.fab {
+  /* border: 3px solid; */
+  font-size: 30px;
+  color: white;
+}
+.fab:hover{
+  color: hsl(136, 65%, 51%);
+}
+
 #contactHeader1{
-  border: 3px solid black;
+  /* border: 3px solid black; */
 
 }
 #contactHeader2{
-  border: 3px solid black;
+  /* border: 3px solid black; */
 
 }
 .footerButton{
-  border: 3px solid black;
+  /* border: 3px solid black; */
 
 }
 
