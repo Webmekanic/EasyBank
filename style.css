@@ -338,7 +338,12 @@ main{
   font-weight: lighter;
   color: hsl(233, 26%, 24%);
   margin-top: 0.8rem;
+  cursor: pointer;
 }
+.blogTitle:hover{
+  color: hsl(136, 65%, 51%);
+}
+
 .blogParagraph{
   /* border: 2px solid blue; */
   max-width: 83%;
@@ -432,14 +437,67 @@ padding-top: 2rem;
 
 #contactHeader1{
   /* border: 3px solid black; */
-
+ 
+  color: hsl(219, 17%, 84%);
+   /* list-style-type: disc; */
 }
+  .footerLinkItem {
+    list-style: none;
+    /* border: 2px solid blue; */
+    /* font-size: 18px; */
+    padding-top: 1rem;
+    /* font-weight: lighter; */
+    
+  }
+    
+
+.footerLink {
+  /* border: 3px solid blue; */
+  text-decoration: none;
+  /* list-style: none; */
+  color: hsl(219, 17%, 84%);
+}
+.footerLink:hover{
+  color: hsl(136, 65%, 51%);
+}
+
 #contactHeader2{
   /* border: 3px solid black; */
 
 }
 .footerButton{
   /* border: 3px solid black; */
+  margin: 2rem 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* align-items: center; */
+
+}
+#footerBtn{
+  /* border: 2px solid red; */
+  border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    /* font-size: 16px; */
+    text-transform: capitalize;
+    color: white;
+    background-color: hsl(136, 65%, 51%);
+     background-image: linear-gradient(to right, hsl(136, 65%, 51%) ,  hsl(192, 70%, 51%));
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    /* display: block; */
+}
+#footerBtn:hover{
+  opacity: 0.6;
+}
+.footerParagraph{
+  /* border: 2px solid red; */
+  margin-top: 1rem;
+  font-size: 15px;
+  color: hsl(219, 17%, 84%);
+  opacity: 0.8;
 
 }
 
@@ -463,7 +521,7 @@ padding-top: 2rem;
 
 @media (min-width: 49.375rem) {
   nav{
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .navLink {
   /* border: 2px solid black; */
@@ -483,7 +541,6 @@ padding-top: 2rem;
   padding: 1.7rem 0;
   justify-content: center;
   /* display: block; */
- 
 }
 .navLinkItem:hover{
   border-bottom: 3px solid hsl(136, 65%, 51%);
@@ -522,18 +579,24 @@ padding-top: 2rem;
   display: none;
 }
 #home{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 100%;
   background-color:hsl(0, 0%, 98%);
-  display: flex;
-flex-direction: row-reverse;
+  /* display: flex; */
+/* flex-direction: row-reverse; */
 
 
 }
-/* .homeBackground{
-  min-height: 10em;
-  background-position: center 70%;
-}  */
+.homeBackground{
+  /* border: 3px solid red; */
+  /* width: 50%; */
+  /* min-height: 10em; */
+  /* background-position: center 70%; */
+} 
+.homeText{
+  /* border: 2px solid black; */
+  /* width: 30%; */
+}
 
 
 
