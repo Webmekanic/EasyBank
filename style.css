@@ -7,6 +7,7 @@
 body{
   /* width: 100vw; */
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
   /* overflow: hidden; */
 }
 /* html{
@@ -392,7 +393,7 @@ main{
 }
 .contactPage{
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  grid-template-columns: repeat( auto-fit, minmax(247px, 1fr) );
   align-items: center;
   text-align: center
   ;
@@ -674,8 +675,8 @@ flex-direction: row-reverse;
 
   }
   #blog{
-    /* border: 3px solid orchid;
-  } */
+    /* border: 3px solid orchid*/;
+  } 
   main{
     /* border: 1px solid; */
   }
@@ -698,17 +699,86 @@ flex-direction: row-reverse;
     /* font-size: 16px; */
   }
   footer{
-    border: 3px solid red;
+    /* border: 3px solid red; */
   }
   #contact{
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
+  }
+
+  .contactPage{
+    /* border: 2px solid orange; */
+    align-items: start;
+    text-align: start;
+    padding-top: 1.5rem;
   }
   #contactLogo{
-    border: 2px solid yellow;
+    /* border: 2px solid blue; */
+    padding-top: 1rem;
+  }
+ 
+  .contactSocialMedia{
+    /* border: 2px solid blanchedalmond; */
+    /* text-align: ; */
+    align-items: flex-start;
+    justify-content: start;
+    padding-top: 2.3rem;
+  }
+  .fab {
+    /* border: 3px solid; */
+    font-size: 25px;
+    color: white;
+  }
+  #contactHeader1{
+    /* border: 2px solid pink; */
+    /* margin-left: 0.5rem; */
+  }
+  #contactHeader2{
+    /* border: 3px solid white; */
+    /* margin-left: 1rem; */
   }
 
+  .footerButton{
+    align-items: end;
+    text-align: end;
+    margin-top: 1rem;
+
+  }
+  .footerParagraph{
+    /* border: 2px solid red; */
+    margin-top: 2.2rem;
+    font-size: 13px;
+
+  }
 }
+
+@media (min-width: 49rem) {
+  body{
+    border: 3px solid red;
+  }
+
+  .homeBackground{
+    width: 35%;
+
+  }
+  .homeBackground::after{
+    height: 110%;
+    width: 113%;
+    background-size: 135%;
+    background-position: 0% 80%;
+
+  }
+  .homeBackground::before{
+    width: 100%;
+    height: 140%;
+    background-position: center 100%;
+
+
+  }
+
+  
+}
+
 
 
 
