@@ -286,13 +286,15 @@ main{
 .blogPage{
   /* border: 4px solid green; */
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
+  grid-template-columns: repeat( auto-fit, minmax(247px, 1fr) );
   gap: 1.8rem;
 }
 .blogHeader{
   /* border: 2px solid orange; */
   margin-bottom: 2.22rem;
   font-weight: 300;
+  text-align: start;
+  margin: 2.5rem 0;
 }
 .blogCard{
   /* border: 2px solid purple; */
@@ -383,6 +385,7 @@ main{
   background-color: hsl(233, 26%, 24%);
   padding-bottom: 4rem;
   color: white;
+  /* border: 3px solid red; */
   /* align-items: center; */
   
   /* margin-top: 6rem; */
@@ -494,6 +497,7 @@ padding-top: 2rem;
 
 }
 
+
 @media (min-width: 49.375rem) {
   nav{
     /* border: 2px solid red; */
@@ -560,7 +564,7 @@ padding-top: 2rem;
   background-color:hsl(0, 0%, 98%);
   padding-bottom: 4rem;
 flex-direction: row-reverse;
-overflow: none;
+/* overflow-x: hidden; */
 /* margin-bottom: 4rem; */
 }
 .homeBackground{
@@ -649,38 +653,60 @@ overflow: none;
     width: 75px;
     height: 75px;
     position: relative;
-    margin: 60px 0 40px 15px;
+    margin: 60px 0 40px 0px;
     /* margin: 40px auto; */
   }
   .aboutCardHeader{
     /* border: 2px solid yellowgreen; */
     font-size: 22px;
     text-align: start;
-    margin-left: 15px;
+    /* margin-left: 15px; */
   }
   .aboutCardPara{
-      /* border: 2px solid blue; */
-      /* color: hsl(233, 8%, 62%); */
   font-size: 0.98rem;
-  /* line-height: 1.5rem; */
   text-align: start;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* line-height: 1.8rem; */
-  /* margin-bottom: 2rem; */
-  /* padding: 0rem 0.3rem; */
   margin-top: 1rem;
 
   }
   
   .aboutArticle{
     gap: 1.5rem;
-    /* border: 2px solid yellowgreen; */
-    /* width: 80%; */
-    /* margin: auto; */
 
   }
+  #blog{
+    /* border: 3px solid orchid;
+  } */
+  main{
+    /* border: 1px solid; */
+  }
+ 
+  .blogCard{
+    /* border: 2px solid red; */
+  }
+  .blogImage, .blogImage2, .blogImage3, .blogImage4{
+    /* border: 1px solid orange; */
+    height: 12.4rem
+  }
+  .blogger{
+    /* border: 1px solid green; */
+    /* font-size: 10px; */
+  }
+  .blogTitle{
+    /* border: 1px solid blue; */
+    /* width: 20px; */
+    /* font-weight: light; */
+    /* font-size: 16px; */
+  }
+  footer{
+    border: 3px solid red;
+  }
+  #contact{
+    border: 2px solid red;
 
+  }
+  #contactLogo{
+    border: 2px solid yellow;
+  }
 
 }
 
