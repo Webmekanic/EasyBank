@@ -1,6 +1,5 @@
 const hamburger = document.querySelector(".hamburger")
 const menuCollection = document.querySelector(".menuCollection")
-// const fadeIn = doc
 console.log(hamburger)
 
 hamburger.addEventListener("click", openMenu)

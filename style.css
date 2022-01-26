@@ -99,11 +99,7 @@ nav {
 .homeText {
   width: 90%;
   margin: auto;
-  /* border: 2px solid blue;  */
-  /* text-align: justify; */
   margin-top: 1.5rem;
-
-  /* justify-content: j; */
 }
 .menuCollection {
   /* border: 1px solid green; */
@@ -117,6 +113,9 @@ nav {
   text-align: center;
   border-radius: 5px;
   display: none;
+  /* position: fixed; */
+  /* top: 99px; */
+  /* z-index: 99; */
 }
 .menuCollection.active {
   display: block;
@@ -210,16 +209,13 @@ main {
   padding: 0rem 0.3rem;
 }
 .aboutArticle {
-  /* border: 3px solid orange; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* gap: 2.5rem; */
 }
 .aboutImg,
 .aboutImg2,
 .aboutImg3,
 .aboutImg4 {
-  /* border: 2px solid blue; */
   width: 95px;
   height: 95px;
   position: relative;
@@ -398,10 +394,6 @@ main {
   background-color: hsl(233, 26%, 24%);
   padding-bottom: 4rem;
   color: white;
-  /* border: 3px solid red; */
-  /* align-items: center; */
-
-  /* margin-top: 6rem; */
 }
 .contactPage {
   display: grid;
@@ -446,8 +438,6 @@ main {
 }
 .footerLinkItem {
   list-style: none;
-  /* border: 2px solid blue; */
-  /* font-size: 18px; */
   padding-top: 1rem;
   /* font-weight: lighter; */
 }
@@ -514,8 +504,6 @@ main {
     /* border: 2px solid green; */
     justify-content: space-between;
     width: 100%;
-    /* margin-left: 3rem; */
-    /* font-size: 18px; */
     list-style: none;
     text-transform: capitalize;
     font-weight: 400;
@@ -567,8 +555,6 @@ main {
     background-color: hsl(0, 0%, 98%);
     padding-bottom: 4rem;
     flex-direction: row-reverse;
-    /* overflow-x: hidden; */
-    /* margin-bottom: 4rem; */
   }
   .homeBackground {
     /* border: 3px solid red; */
@@ -580,15 +566,12 @@ main {
     position: absolute;
     height: 110%;
     width: 180%;
-
-    /* width: 113%; */
     background-image: url(./images/bg-intro-desktop.svg);
     /* border: 2px solid orange; */
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 145%;
     background-position: 0% 80%;
-    /* overflow: hidden; */
   }
 
   .homeBackground::after {
@@ -623,9 +606,6 @@ main {
     padding: 0.8rem 2rem;
   }
 
-  #about {
-    /* border: 2px solid; */
-  }
   main {
     /* border: 2px solid red; */
     width: 80%;
@@ -669,38 +649,13 @@ main {
   .aboutArticle {
     gap: 1.5rem;
   }
-  #blog {
-    /* border: 3px solid orchid*/
-  }
-  main {
-    /* border: 1px solid; */
-  }
 
-  .blogCard {
-    /* border: 2px solid red; */
-  }
   .blogImage,
   .blogImage2,
   .blogImage3,
   .blogImage4 {
     /* border: 1px solid orange; */
     height: 12.4rem;
-  }
-  .blogger {
-    /* border: 1px solid green; */
-    /* font-size: 10px; */
-  }
-  .blogTitle {
-    /* border: 1px solid blue; */
-    /* width: 20px; */
-    /* font-weight: light; */
-    /* font-size: 16px; */
-  }
-  footer {
-    /* border: 3px solid red; */
-  }
-  #contact {
-    /* border: 2px solid red; */
   }
 
   .contactPage {
@@ -710,13 +665,10 @@ main {
     padding-top: 1.5rem;
   }
   #contactLogo {
-    /* border: 2px solid blue; */
     padding-top: 1rem;
   }
 
   .contactSocialMedia {
-    /* border: 2px solid blanchedalmond; */
-    /* text-align: ; */
     align-items: flex-start;
     justify-content: start;
     padding-top: 2.3rem;
@@ -725,14 +677,6 @@ main {
     /* border: 3px solid; */
     font-size: 25px;
     color: white;
-  }
-  #contactHeader1 {
-    /* border: 2px solid pink; */
-    /* margin-left: 0.5rem; */
-  }
-  #contactHeader2 {
-    /* border: 3px solid white; */
-    /* margin-left: 1rem; */
   }
 
   .footerButton {
@@ -747,37 +691,7 @@ main {
   }
 }
 
-/* @media (min-width: 49rem) {
-  body{
-    border: 3px solid red;
-  }
-
-  .homeBackground{
-    width: 35%;
-
-  }
-  .homeBackground::after{
-    height: 110%;
-    width: 113%;
-    background-size: 135%;
-    background-position: 0% 80%;
-
-  }
-  .homeBackground::before{
-    width: 100%;
-    height: 140%;
-    
-
-  }
-
-  
-} */
-
 @media (min-width: 66rem) {
-  /* .homeBackground{
-    width: 55%;
-    background-image: none;
-  }  */
   .homeBackground::before {
     height: 110%;
     width: 100%;
