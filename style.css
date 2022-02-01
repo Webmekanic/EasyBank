@@ -102,20 +102,18 @@ nav {
   margin-top: 1.5rem;
 }
 .menuCollection {
-  /* border: 1px solid green; */
   position: absolute;
   background-color: white;
   position: absolute;
-  top: 10px;
+  top: 90px;
   right: 50%;
   transform: translateX(50%);
-  width: 390px;
+  width: 85vw;
   text-align: center;
   border-radius: 5px;
   display: none;
-  /* position: fixed; */
-  /* top: 99px; */
-  /* z-index: 99; */
+  position: fixed;
+  z-index: 99;
 }
 .menuCollection.active {
   display: block;
@@ -298,7 +296,7 @@ main {
   /* gap: 2rem; */
 }
 .blogPage {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
   gap: 1.8rem;
@@ -400,7 +398,7 @@ main {
   color: white;
 }
 .contactPage {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
   align-items: center;
@@ -450,18 +448,13 @@ main {
 .footerLink {
   /* border: 3px solid blue; */
   text-decoration: none;
-  /* list-style: none; */
   color: hsl(219, 17%, 84%);
 }
 .footerLink:hover {
   color: hsl(136, 65%, 51%);
 }
 
-#contactHeader2 {
-  /* border: 3px solid black; */
-}
 .footerButton {
-  /* border: 3px solid black; */
   margin: 2rem 0;
 }
 #footerBtn {
@@ -493,9 +486,6 @@ main {
 }
 
 @media (min-width: 830px) {
-  nav {
-    border: 2px solid red;
-  }
   .navLink {
     display: flex;
     flex-direction: row;
@@ -671,20 +661,6 @@ main {
   }
 }
 
-@media (min-width: 66rem) {
-  .homeBackground::before {
-    height: 110%;
-    width: 100%;
-    background-size: 140%;
-    background-position: 0% 75%;
-  }
-
-  .homeBackground::after {
-    width: 100%;
-    height: 140%;
-  }
-}
-
 .fadeIn {
   opacity: 0;
   -webkit-transition: opacity 950ms ease-in;
@@ -787,20 +763,47 @@ main {
   }
 }
 
-@media (min-width: 993px) {
-  .aboutArticle {
-    /* border: 2px solid orange; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+@media (min-width: 62.6875rem) {
+  .aboutArticle,
+  .blogPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+
+  .homeBackground::before {
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 100%;
+    background-size: 200%;
+    background-position: 0% 75%;
+  }
+
+  .homeBackground::after {
+    width: 145%;
+    height: 140%;
   }
 }
 
-@media (min-width: 1335px) {
-  .aboutArticle {
-    /* border: 2px solid orange; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+@media (min-width: 75.3125rem) {
+  .aboutArticle,
+  .blogPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  @media (min-width: 66rem) {
+    .homeBackground::before {
+      /* border: 2px solid green; */
+      height: 110%;
+      width: 100%;
+      background-size: 140%;
+      background-position: 0% 75%;
+    }
+
+    .homeBackground::after {
+      width: 100%;
+      height: 140%;
+    }
   }
 }
