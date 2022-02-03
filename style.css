@@ -629,6 +629,8 @@ main {
   animation: 1s slideInFromLeft;
 }
 
+/* WINDOW API ANIMATIONS */
+
 @-webkit-keyframes slideInFromBottom {
   0% {
     opacity: 0;
